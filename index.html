@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neel Rakhade — Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Neel Rakhade, full-stack developer and CS student. Live projects, prototypes, and academic work.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">NR<span class="dot dot-live" aria-hidden="true"></span></a>
+      <nav class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-status">
+            <span class="dot dot-live" aria-hidden="true"></span>
+            Available for internships &amp; freelance work
+          </p>
+          <h1 class="hero-title">
+            Neel Rakhade
+          </h1>
+          <p class="hero-subtitle">Full-stack developer &amp; CS student</p>
+          <p class="hero-desc">
+            I build and ship real software — client websites, SaaS prototypes, and coursework systems 
+            across React, Flask, Next.js, and plain HTML/CSS/JS. If it's listed below, it either runs in
+            production right now or runs locally and works exactly as described.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">See the work</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="your-photo.png" alt="Neel Rakhade">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="work" id="work">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>Selected work</h2>
+          <p class="section-sub">Every status tag below means exactly what it says.</p>
+        </div>
+
+        <div class="legend">
+          <span class="legend-item"><span class="dot dot-live" aria-hidden="true"></span> Live in production</span>
+          <span class="legend-item"><span class="dot dot-proto" aria-hidden="true"></span> Prototype / not deployed</span>
+          <span class="legend-item"><span class="dot dot-course" aria-hidden="true"></span> Academic coursework</span>
+        </div>
+
+        <div class="project-grid">
+
+          <!-- Selecto -->
+          <article class="project-card project-card--featured">
+            <div class="project-status">
+              <span class="dot dot-live" aria-hidden="true"></span>
+              <span class="status-label status-label--live">Live</span>
+            </div>
+            <h3 class="project-title">Selecto Men's Wear</h3>
+            <p class="project-desc">
+              Production website for a real Mumbai tailoring business. Handled the full deployment
+              pipeline myself — connected a GoDaddy domain to Vercel via DNS configuration, shipped,
+              and it's been running since.
+            </p>
+            <ul class="project-tags">
+              <li>HTML/CSS/JS</li>
+              <li>Vercel</li>
+              <li>DNS / domain config</li>
+            </ul>
+            <a href="https://www.selectomenswear.shop/" target="_blank" rel="noopener noreferrer" class="project-link">
+              Visit live site <i class="arrow" aria-hidden="true">→</i>
+            </a>
+          </article>
+
+          <!-- CreatorHive -->
+          <article class="project-card">
+            <div class="project-status">
+              <span class="dot dot-proto" aria-hidden="true"></span>
+              <span class="status-label status-label--proto">Prototype</span>
+            </div>
+            <h3 class="project-title">CreatorHive</h3>
+            <p class="project-desc">
+              A brand-deal marketplace concept connecting Indian D2C brands with micro-creators.
+              Built as a full Next.js 14 app with a relational data model behind it.
+            </p>
+            <ul class="project-tags">
+              <li>Next.js 14</li>
+              <li>PostgreSQL</li>
+              <li>Prisma</li>
+            </ul>
+          </article>
+
+          <!-- ContractScan -->
+          <article class="project-card">
+            <div class="project-status">
+              <span class="dot dot-proto" aria-hidden="true"></span>
+              <span class="status-label status-label--proto">Prototype</span>
+            </div>
+            <h3 class="project-title">ContractScan</h3>
+            <p class="project-desc">
+              An AI-powered contract analysis tool — upload a contract, get key terms and risk areas
+              flagged automatically. Backend wired up to an LLM API for the actual analysis.
+            </p>
+            <ul class="project-tags">
+              <li>Flask</li>
+              <li>Groq API</li>
+              <li>Python</li>
+            </ul>
+          </article>
+
+          <!-- DealInbox -->
+          <article class="project-card">
+            <div class="project-status">
+              <span class="dot dot-proto" aria-hidden="true"></span>
+              <span class="status-label status-label--proto">Prototype</span>
+            </div>
+            <h3 class="project-title">DealInbox</h3>
+            <p class="project-desc">
+              SaaS for creators managing brand-deal pipelines. Contributed CSS rewrites and handled
+              deployment troubleshooting on Render as part of a small build team.
+            </p>
+            <ul class="project-tags">
+              <li>Flask</li>
+              <li>MongoDB</li>
+              <li>Render</li>
+            </ul>
+          </article>
+
+          <!-- Bean Boutique (coursework) -->
+          <article class="project-card">
+            <div class="project-status">
+              <span class="dot dot-course" aria-hidden="true"></span>
+              <span class="status-label status-label--course">Coursework</span>
+            </div>
+            <h3 class="project-title">Bean Boutique</h3>
+            <p class="project-desc">
+              Multi-page e-commerce site built for an NCC Front End Web Development unit — auth and
+              cart persistence via localStorage, a Flask backend, validated against W3C standards
+              and tested for accessibility.
+            </p>
+            <ul class="project-tags">
+              <li>HTML/CSS/JS</li>
+              <li>Flask</li>
+              <li>WCAG / W3C</li>
+            </ul>
+          </article>
+
+          <!-- PVS / NYPS (coursework) -->
+          <article class="project-card">
+            <div class="project-status">
+              <span class="dot dot-course" aria-hidden="true"></span>
+              <span class="status-label status-label--course">Coursework</span>
+            </div>
+            <h3 class="project-title">Property Viewing System</h3>
+            <p class="project-desc">
+              Full systems analysis &amp; design project for a fictional letting agency — use case,
+              sequence, and class diagrams, built out from requirements to a complete UML model.
+            </p>
+            <ul class="project-tags">
+              <li>UML</li>
+              <li>Systems design</li>
+              <li>draw.io</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="skills" id="skills">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="section-sub">Grouped by what they're actually for.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Frontend</h3>
+            <ul class="skill-list">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>HTML / CSS / JS</li>
+              <li>Vite</li>
+              <li>Responsive &amp; accessible UI</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Backend &amp; data</h3>
+            <ul class="skill-list">
+              <li>Python </li>
+              <li>Node.js</li>
+              <li>SQL</li>
+              <li>PostgreSQL / Prisma</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Deployment &amp; tooling</h3>
+            <ul class="skill-list">
+              <li>Vercel</li>
+              <li>Render</li>
+              <li>Git / GitHub workflow</li>
+              <li>DNS &amp; domain configuration</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Systems &amp; design</h3>
+            <ul class="skill-list">
+              <li>OOSAD / UML modelling</li>
+              <li>Database design (ERDs, schemas)</li>
+              <li>Software engineering practice</li>
+              <li>Test case design</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-inner contact-inner">
+        <div class="contact-text">
+          <h2>Let's build something</h2>
+          <p class="section-sub">
+            Open to internships, freelance projects, and anything where shipping fast and getting it
+            right both matter.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:rakhadeneel@gmail.com" class="contact-link">
+              <i class="icon" aria-hidden="true">✉</i>
+              rakhadeneel@gmail.com
+            </a>
+            <a href="https://github.com/neel619" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="icon" aria-hidden="true">⌥</i>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/neelrakhade" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="icon" aria-hidden="true">in</i>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span class="btn-submit-text">Send message</span>
+          </button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="section-inner footer-inner">
+        <p class="footer-text">
+            &copy; <span id="footer-year"></span> Neel Rakhade.
+      <p class="footer-year"></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
