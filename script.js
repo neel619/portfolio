@@ -2,9 +2,9 @@
 // CONFIG — fill these in with your own EmailJS values
 // Get them from https://dashboard.emailjs.com/admin
 // ============================================
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+const EMAILJS_PUBLIC_KEY = "PNqrfLf0c8FZ5jmnl";
+const EMAILJS_SERVICE_ID = "service_6wz0eba";
+const EMAILJS_TEMPLATE_ID = "template_p7oiub8";
 
 // ============================================
 // Footer year
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // ============================================
 // EmailJS init
 // ============================================
-if (window.emailjs && EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
+if (window.emailjs && EMAILJS_PUBLIC_KEY !== "PNqrfLf0c8FZ5jmnl") {
   emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 }
 
@@ -34,7 +34,7 @@ const submitText = form.querySelector(".btn-submit-text");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  if (EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY") {
+  if (EMAILJS_PUBLIC_KEY === "PNqrfLf0c8FZ5jmnl") {
     statusEl.textContent = "Contact form isn't wired up yet — add your EmailJS keys in script.js.";
     statusEl.className = "form-status error";
     return;
