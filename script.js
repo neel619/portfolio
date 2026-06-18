@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // ============================================
 if (window.emailjs && EMAILJS_PUBLIC_KEY !== "PNqrfLf0c8FZ5jmnl") {
   emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+  
 }
 
 // ============================================
